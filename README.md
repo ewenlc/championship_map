@@ -1,4 +1,4 @@
-# 📌 CHAMPIONSHIP MAP
+# 📌 CHAMPIONSHIP basket MAP
 
 L'objectif est de creer une carte interactive representant les perimetres englobant les différentes equipes d'un championnat. Donner une meilleure approche graphique des distances entre différentes équipes d'une meme competition.
 
