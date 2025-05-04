@@ -30,7 +30,7 @@ Pour récuperer dans un fichier csv les équipes ainsi que l'adresse de leur sal
 
 exemple de rendu :
 
-"Equipe";"Adresse"
+"Equipe";"Adresse"/
 "GROUPE ST VINCENT LE PALLET";"RUE DES SPORTS, 44330 Le Pallet"
 "BASKET CLUB BASSE GOULAINE";"SQUARE DE THELEY, 44115 Basse-Goulaine"
 "IE - CTC ERDRE CANAL - BASKET CLUB SUCE/ERDRE";"IMPASSE DU LEVANT, 44240 Sucé-sur-Erdre"
