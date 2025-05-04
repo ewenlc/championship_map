@@ -28,6 +28,12 @@ Première partie : (Scrapping des pages de championnats ffbb (récuperer club/vi
 
 Pour récuperer dans un fichier csv les équipes ainsi que l'adresse de leur salle de basket d'une poule (présente sur le site https://competitions.ffbb.com/). Il vous suffit de coller le lien de la page de la poule à analyser (exemple pour la poule B phase 2 D3 loire-atlantique :  https://competitions.ffbb.com/ligues/pdl/comites/0044/competitions/dm3/classement?phase=200000002864683&poule=200000003006250) dans l'espace réserver à celui ci dans le code scraper_ffbb_2.py.
 
+---------------------------------------------------------------------------------------------
+
+Part One: (Scraping the FFBB championship pages (retrieve club/city and sort by group))
+
+To retrieve the teams and the address of their basketball venues from a group (available on the website https://competitions.ffbb.com/) in a csv file, simply paste the link to the group page to analyze (example for Group B Phase 2 D3 Loire-Atlantique: https://competitions.ffbb.com/ligues/pdl/comites/0044/competitions/dm3/classement?phase=200000002864683&poule=200000003006250) into the space provided in the scraper_ffbb_2.py code.
+
 
 
 
