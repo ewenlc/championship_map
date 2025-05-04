@@ -26,7 +26,7 @@ The goal is to create an interactive map representing the perimeters encompassin
 
 Première partie : (Scrapping des pages de championnats ffbb (récuperer club/ville et classer celon poules)
 
-Pour récuperer dans un fichier csv les équipes ainsi que l'adresse de leur salle de basket d'une poule (présente sur le site https://competitions.ffbb.com/). Il vous suffit de coller le lien de la page de la poule à analyser (exemple pour la poule B phase 2 D3 loire-atlantique :  https://competitions.ffbb.com/ligues/pdl/comites/0044/competitions/dm3/classement?phase=200000002864683&poule=200000003006250) dans l'espace réserver à celui ci dans le code scraper_ffbb_2.py.
+Pour récuperer dans un fichier csv les équipes ainsi que l'adresse de leur salle de basket d'une poule (présente sur le site https://competitions.ffbb.com/). Il vous suffit de coller le lien de la page de la poule à analyser (exemple pour la poule F phase 2 D3 loire-atlantique : (https://competitions.ffbb.com/ligues/pdl/comites/0044/competitions/dm3/classement?phase=200000002864683&poule=200000003006254) dans l'espace réserver à celui ci dans le code scraper_ffbb_2.py.
 
 exemple de rendu :
 
