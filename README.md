@@ -84,7 +84,26 @@ exemple de rendu (sur le fichier positions_avec_coords.csv) :
 | USVR VARADES BASKET                             | 47.3886168 | -1.0325296 |
 
 
+### Troisième partie : (Affichage de la carte)
 
+🗺️ Génération et affichage de la carte
+
+La carte interactive est générée à partir du fichier positions_avec_coords.csv contenant les coordonnées GPS de chaque équipe.<br>
+Pour cela, on utilise la bibliothèque Python Folium, qui s’appuie sur Leaflet.js pour produire une carte web interactive.
+
+Chaque salle est représentée par un marqueur stylisé , et l’ensemble des points forme un polygone qui délimite la zone géographique couverte par les équipes.
+Seuls les points en bordure (calculés avec l’enveloppe convexe, ou convex hull) sont utilisés pour dessiner le polygone afin d’éviter un rendu déformé par des points centraux inclus dans l’aire.
+
+PHOTO
+
+🎨 Style et interaction<br>
+Le polygone a un style visuel personnalisable (couleur, transparence, contour...), et les marqueurs sont interactifs : on peut cliquer dessus pour voir le nom de l’équipe.
+
+🐞 Problème rencontré :<br>
+Au départ, le polygone recouvrait les marqueurs et empêchait l’interaction (clic, survol, etc.).
+Cela venait du fait que le calque du polygone interceptait les événements utilisateurs.
+
+✅ Solution : on a désactivé l’interaction sur le polygone (interactive: False) et modifié son style pour qu’il passe sous les marqueurs (effet de "calques", ou z-index dans le navigateur).
 
 
 ---------------------------------------------------------------------------------------------
