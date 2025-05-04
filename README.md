@@ -8,7 +8,7 @@ The goal is to create an interactive map representing the perimeters encompassin
 
 - [🚀 Fonctionnalités (Features)](#-fonctionnalités)
 - [🙋 Contact](#-contact)
-- [Tester](#Tester)
+- [🔧 Tester](#Tester)
 
 ---
 
@@ -22,7 +22,7 @@ The goal is to create an interactive map representing the perimeters encompassin
 - Creating an interactive map + a menu allowing you to view each group on the map.
 ---
 
-## Tester 
+## 🔧 Tester 
 
 Première partie : (Scrapping des pages de championnats ffbb (récuperer club/ville et classer celon poules)
 
