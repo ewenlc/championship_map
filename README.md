@@ -94,7 +94,7 @@ Pour cela, on utilise la bibliothèque Python Folium, qui s’appuie sur Leaflet
 Chaque salle est représentée par un marqueur stylisé , et l’ensemble des points forme un polygone qui délimite la zone géographique couverte par les équipes.
 Seuls les points en bordure (calculés avec l’enveloppe convexe, ou convex hull) sont utilisés pour dessiner le polygone afin d’éviter un rendu déformé par des points centraux inclus dans l’aire.
 
-![Without convex hull](Capture d’écran 2025-05-04 195330.png)
+![Without convex hull]([Capture d’écran 2025-05-04 195330.png](https://github.com/ewenlc/championship_map/blob/main/Capture%20d%E2%80%99%C3%A9cran%202025-05-04%20195330.png))
 
 🎨 Style et interaction<br>
 Le polygone a un style visuel personnalisable (couleur, transparence, contour...), et les marqueurs sont interactifs : on peut cliquer dessus pour voir le nom de l’équipe.
