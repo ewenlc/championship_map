@@ -131,6 +131,8 @@ Add an automatic fallback: Nominatim → Google Maps API<br>
 Log failed addresses for manual correction<br>
 Local caching of geocodes to avoid repeated calls
 
+Example of output (file positions_avec_coords.csv):
+
 
 | Équipe                                           | Latitude   | Longitude  |
 |--------------------------------------------------|------------|------------|
