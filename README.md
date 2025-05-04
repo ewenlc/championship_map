@@ -56,7 +56,9 @@ Nominatim est très utile, mais présente des limitations :
 Certaines adresses mal structurées ou incomplètes ne sont pas reconnues.<br>
 Les adresses trop générales ou locales (ex : "Stade Municipal") sont souvent mal interprétées ou non géocodées, problème qu'on a résolu en remplacant l'adresse non exact par le nom de la commune uniquement. Ce changement nous permet d'avoir une adresse au détriement de la précision.
 
-🚀 Évolution prévue : bascule vers une API plus robuste
+🚀 Évolution prévue : 
+
+bascule vers une API plus robuste
 Pour améliorer la précision et la couverture, une future version pourra utiliser l’API Google Maps Geocoding :
 
 ✅ Plus fiable pour les adresses incomplètes ou ambigües<br>
@@ -64,6 +66,7 @@ Pour améliorer la précision et la couverture, une future version pourra utilis
 ❗️ Requiert une clé API et l’activation de la facturation (crédit gratuit de 200 $/mois)
 
 🛠️ Améliorations possibles
+
 Ajout d’un fallback automatique : Nominatim → Google Maps API<br>
 Enregistrement des adresses échouées pour correction manuelle<br>
 Cache local des géocodages pour éviter les appels répétés
