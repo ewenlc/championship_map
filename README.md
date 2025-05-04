@@ -30,13 +30,15 @@ Pour récuperer dans un fichier csv les équipes ainsi que l'adresse de leur sal
 
 exemple de rendu :
 
-"Equipe";"Adresse"/
-"GROUPE ST VINCENT LE PALLET";"RUE DES SPORTS, 44330 Le Pallet"
-"BASKET CLUB BASSE GOULAINE";"SQUARE DE THELEY, 44115 Basse-Goulaine"
-"IE - CTC ERDRE CANAL - BASKET CLUB SUCE/ERDRE";"IMPASSE DU LEVANT, 44240 Sucé-sur-Erdre"
-"MONTBERT GENESTON LE BIGNON B.";"Stade Municipal, 44140 Montbert"
-"ASPTT NANTES";"38 RUE APPERT, 44100 Nantes"
-"USVR VARADES BASKET";"450 Rue du Parc, 44370 Varades"
+| Équipe                                           | Adresse                                  |
+|--------------------------------------------------|-------------------------------------------|
+| GROUPE ST VINCENT LE PALLET                     | RUE DES SPORTS, 44330 Le Pallet           |
+| BASKET CLUB BASSE GOULAINE                      | SQUARE DE THELEY, 44115 Basse-Goulaine    |
+| IE - CTC ERDRE CANAL - BASKET CLUB SUCE/ERDRE   | IMPASSE DU LEVANT, 44240 Sucé-sur-Erdre   |
+| MONTBERT GENESTON LE BIGNON B.                  | Stade Municipal, 44140 Montbert           |
+| ASPTT NANTES                                    | 38 RUE APPERT, 44100 Nantes               |
+| USVR VARADES BASKET                             | 450 Rue du Parc, 44370 Varades            |
+
 
 
 
