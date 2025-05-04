@@ -162,6 +162,26 @@ Example of output (file positions_avec_coords.csv):
 | ASPTT NANTES                                    | 47.2138644 | -1.5798205 |
 | USVR VARADES BASKET                             | 47.3886168 | -1.0325296 |
 
+### Part Three: (Map Display)
+
+🗺️ Map Generation and Display
+
+The interactive map is generated from the `positions_avec_coords.csv` file, which contains the GPS coordinates of each team.<br>
+We use the Python library **Folium**, built on top of Leaflet.js, to create an interactive web map.
+
+Each gymnasium is represented by a custom-styled marker, and all points are connected to form a polygon that outlines the geographic area covered by the teams.  
+Only the outermost points (calculated using the convex hull) are used to draw the polygon to avoid distortions caused by central points included in the area.
+
+![Without convex hull](without_convex_hull.png)
+
+🎨 Style and Interaction <br> 
+The polygon has a fully customizable visual style (color, transparency, borders...), and the markers are interactive: clicking on them shows the team name.
+
+🐞 Issue Encountered:<br> 
+Initially, the polygon layer was blocking the markers and preventing interaction (click, hover, etc.).
+This happened because the polygon layer was intercepting user events.
+
+✅ Solution: We disabled interactivity on the polygon (`interactive: False`) and adjusted its style so it appears below the markers (layering effect, similar to z-index in web browsers).
 
 
 
