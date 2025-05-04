@@ -89,7 +89,7 @@ exemple de rendu (sur le fichier positions_avec_coords.csv) :
 🗺️ Génération et affichage de la carte
 
 La carte interactive est générée à partir du fichier positions_avec_coords.csv contenant les coordonnées GPS de chaque équipe.<br>
-Pour cela, on utilise la bibliothèque Python Folium, qui s’appuie sur Leaflet.js pour produire une carte web interactive.
+Pour cela, on utilise la bibliothèque Python **Folium**, qui s’appuie sur **Leaflet.js** pour produire une carte web interactive.
 
 Chaque salle est représentée par un marqueur stylisé , et l’ensemble des points forme un polygone qui délimite la zone géographique couverte par les équipes.
 Seuls les points en bordure (calculés avec l’enveloppe convexe, ou convex hull) sont utilisés pour dessiner le polygone afin d’éviter un rendu déformé par des points centraux inclus dans l’aire.
@@ -103,7 +103,7 @@ Le polygone a un style visuel personnalisable (couleur, transparence, contour...
 Au départ, le polygone recouvrait les marqueurs et empêchait l’interaction (clic, survol, etc.).
 Cela venait du fait que le calque du polygone interceptait les événements utilisateurs.
 
-✅ Solution : on a désactivé l’interaction sur le polygone (interactive: False) et modifié son style pour qu’il passe sous les marqueurs (effet de "calques", ou z-index dans le navigateur).
+✅ Solution : on a désactivé l’interaction sur le polygone (`interactive: False`) et modifié son style pour qu’il passe sous les marqueurs (effet de "calques", ou z-index dans le navigateur).
 
 
 ---------------------------------------------------------------------------------------------
@@ -167,7 +167,7 @@ Example of output (file positions_avec_coords.csv):
 🗺️ Map Generation and Display
 
 The interactive map is generated from the `positions_avec_coords.csv` file, which contains the GPS coordinates of each team.<br>
-We use the Python library **Folium**, built on top of Leaflet.js, to create an interactive web map.
+We use the Python library **Folium**, built on top of **Leaflet.js**, to create an interactive web map.
 
 Each gymnasium is represented by a custom-styled marker, and all points are connected to form a polygon that outlines the geographic area covered by the teams.  
 Only the outermost points (calculated using the convex hull) are used to draw the polygon to avoid distortions caused by central points included in the area.
