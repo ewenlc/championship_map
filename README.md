@@ -24,7 +24,7 @@ The goal is to create an interactive map representing the perimeters encompassin
 
 ## 🔧 Tester 
 
-Première partie : (Scrapping des pages de championnats ffbb (récuperer club/ville et classer celon poules)
+### Première partie : (Scrapping des pages de championnats ffbb (récuperer club/ville et classer celon poules)
 
 Pour récuperer dans un fichier csv les équipes ainsi que l'adresse de leur salle de basket d'une poule (présente sur le site https://competitions.ffbb.com/). Il vous suffit de coller le lien de la page de la poule à analyser (exemple pour la poule F phase 2 D3 loire-atlantique : (https://competitions.ffbb.com/ligues/pdl/comites/0044/competitions/dm3/classement?phase=200000002864683&poule=200000003006254) dans l'espace réserver à celui ci dans le code scraper_ffbb_2.py.
 
@@ -41,7 +41,7 @@ exemple de rendu (fichier adresses_clubs.csv):
 
 
 
-Deuxième partie : (Convertir les adresses en position GPS)
+### Deuxième partie : (Convertir les adresses en position GPS)
 
 Ce projet utilise actuellement l’API Nominatim (OpenStreetMap) via la bibliothèque Python geopy pour convertir des adresses postales en coordonnées GPS (latitude / longitude).
 
@@ -89,7 +89,7 @@ exemple de rendu (sur le fichier positions_avec_coords.csv) :
 
 ---------------------------------------------------------------------------------------------
 
-First Part: (Scraping FFBB Championship Pages – Retrieving Clubs/Cities and Sorting by Pools)
+### First Part: (Scraping FFBB Championship Pages – Retrieving Clubs/Cities and Sorting by Pools)
 To extract a CSV file with the teams and their basketball court addresses from a pool (available on the website https://competitions.ffbb.com/), simply paste the link to the pool's page you want to analyze (for example, for Pool F, Phase 2 D3 Loire-Atlantique: https://competitions.ffbb.com/ligues/pdl/comites/0044/competitions/dm3/classement?phase=200000002864683&poule=200000003006254) into the designated space in the code scraper_ffbb_2.py.
 
 Example of output (file adresses_clubs.csv):
@@ -103,7 +103,7 @@ Example of output (file adresses_clubs.csv):
 | ASPTT NANTES                                    | 38 RUE APPERT, 44100 Nantes               |
 | USVR VARADES BASKET                             | 450 Rue du Parc, 44370 Varades            |
 
-Second Part: (Converting Addresses to GPS Coordinates)
+### Second Part: (Converting Addresses to GPS Coordinates)
 This project currently uses the Nominatim (OpenStreetMap) API via the Python library geopy to convert postal addresses into GPS coordinates (latitude / longitude).
 
 Why this choice?<br>
