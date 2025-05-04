@@ -94,45 +94,52 @@ To extract a CSV file with the teams and their basketball court addresses from a
 
 Example of output (file adresses_clubs.csv):
 
-Team	Address
-GROUPE ST VINCENT LE PALLET	RUE DES SPORTS, 44330 Le Pallet
-BASKET CLUB BASSE GOULAINE	SQUARE DE THELEY, 44115 Basse-Goulaine
-IE - CTC ERDRE CANAL - BASKET CLUB SUCE/ERDRE	IMPASSE DU LEVANT, 44240 Sucé-sur-Erdre
-MONTBERT GENESTON LE BIGNON B.	Stade Municipal, 44140 Montbert
-ASPTT NANTES	38 RUE APPERT, 44100 Nantes
-USVR VARADES BASKET	450 Rue du Parc, 44370 Varades
+| Équipe                                           | Adresse                                  |
+|--------------------------------------------------|-------------------------------------------|
+| GROUPE ST VINCENT LE PALLET                     | RUE DES SPORTS, 44330 Le Pallet           |
+| BASKET CLUB BASSE GOULAINE                      | SQUARE DE THELEY, 44115 Basse-Goulaine    |
+| IE - CTC ERDRE CANAL - BASKET CLUB SUCE/ERDRE   | IMPASSE DU LEVANT, 44240 Sucé-sur-Erdre   |
+| MONTBERT GENESTON LE BIGNON B.                  | Stade Municipal, 44140 Montbert           |
+| ASPTT NANTES                                    | 38 RUE APPERT, 44100 Nantes               |
+| USVR VARADES BASKET                             | 450 Rue du Parc, 44370 Varades            |
 
 Second Part: (Converting Addresses to GPS Coordinates)
 This project currently uses the Nominatim (OpenStreetMap) API via the Python library geopy to convert postal addresses into GPS coordinates (latitude / longitude).
 
-Why this choice?
-Free and no registration required.
-
+Why this choice?<br>
+Free and no registration required.<br>
 Based on OpenStreetMap, so it's open source.
 
 ⚠️ Nominatim’s Limitations
 While Nominatim is very useful, it has some limitations:
 
-Some poorly structured or incomplete addresses are not recognized.
-
+Some poorly structured or incomplete addresses are not recognized.<br>
 Addresses that are too general or local (e.g., "Stade Municipal") are often misinterpreted or not geocoded. This issue was solved by replacing the incomplete address with just the city name. This adjustment sacrifices precision for availability.
 
-🚀 Planned Evolution: Moving to a More Robust API
+🚀 Planned Evolution: 
+
+Moving to a More Robust API
 To improve accuracy and coverage, a future version may switch to the Google Maps Geocoding API:
 
-✅ More reliable for incomplete or ambiguous addresses
-✅ Returns confidence scores and precise location types
+✅ More reliable for incomplete or ambiguous addresses<br>
+✅ Returns confidence scores and precise location types<br>
 ❗️ Requires an API key and billing activation (free credit of $200/month)
 
 🛠️ Possible Improvements
-Add an automatic fallback: Nominatim → Google Maps API
 
-Log failed addresses for manual correction
-
+Add an automatic fallback: Nominatim → Google Maps API<br>
+Log failed addresses for manual correction<br>
 Local caching of geocodes to avoid repeated calls
 
 
-
+| Équipe                                           | Latitude   | Longitude  |
+|--------------------------------------------------|------------|------------|
+| GROUPE ST VINCENT LE PALLET                     | 47.1419389 | -1.3395804 |
+| BASKET CLUB BASSE GOULAINE                      | 47.2063337 | -1.4331207 |
+| IE - CTC ERDRE CANAL - BASKET CLUB SUCE/ERDRE   | 47.341551  | -1.5285694 |
+| MONTBERT GENESTON LE BIGNON B.                  | 47.0649636 | -1.4709478 |
+| ASPTT NANTES                                    | 47.2138644 | -1.5798205 |
+| USVR VARADES BASKET                             | 47.3886168 | -1.0325296 |
 
 
 
