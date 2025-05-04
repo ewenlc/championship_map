@@ -46,7 +46,7 @@ Deuxième partie : (Convertir les adresses en position GPS)
 Ce projet utilise actuellement l’API Nominatim (OpenStreetMap) via la bibliothèque Python geopy pour convertir des adresses postales en coordonnées GPS (latitude / longitude).
 
 Pourquoi ce choix ?
-<br><br>
+<br>
 Gratuite et sans inscription.<br>
 Basée sur OpenStreetMap, donc open source.
 
@@ -59,13 +59,13 @@ Les adresses trop générales ou locales (ex : "Stade Municipal") sont souvent m
 🚀 Évolution prévue : bascule vers une API plus robuste
 Pour améliorer la précision et la couverture, une future version pourra utiliser l’API Google Maps Geocoding :
 
-✅ Plus fiable pour les adresses incomplètes ou ambigües
-✅ Renvoie un score de confiance et des types de lieux précis
+✅ Plus fiable pour les adresses incomplètes ou ambigües<br>
+✅ Renvoie un score de confiance et des types de lieux précis<br>
 ❗️ Requiert une clé API et l’activation de la facturation (crédit gratuit de 200 $/mois)
 
 🛠️ Améliorations possibles
-Ajout d’un fallback automatique : Nominatim → Google Maps API
-Enregistrement des adresses échouées pour correction manuelle
+Ajout d’un fallback automatique : Nominatim → Google Maps API<br>
+Enregistrement des adresses échouées pour correction manuelle<br>
 Cache local des géocodages pour éviter les appels répétés
 
 
