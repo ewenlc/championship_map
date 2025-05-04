@@ -74,14 +74,64 @@ Cache local des géocodages pour éviter les appels répétés
 
 exemple de rendu (sur le fichier positions_avec_coords.csv) :
 
+| Équipe                                           | Latitude   | Longitude  |
+|--------------------------------------------------|------------|------------|
+| GROUPE ST VINCENT LE PALLET                     | 47.1419389 | -1.3395804 |
+| BASKET CLUB BASSE GOULAINE                      | 47.2063337 | -1.4331207 |
+| IE - CTC ERDRE CANAL - BASKET CLUB SUCE/ERDRE   | 47.341551  | -1.5285694 |
+| MONTBERT GENESTON LE BIGNON B.                  | 47.0649636 | -1.4709478 |
+| ASPTT NANTES                                    | 47.2138644 | -1.5798205 |
+| USVR VARADES BASKET                             | 47.3886168 | -1.0325296 |
+
+
 
 
 
 ---------------------------------------------------------------------------------------------
 
-Part One: (Scraping the FFBB championship pages (retrieve club/city and sort by group))
+First Part: (Scraping FFBB Championship Pages – Retrieving Clubs/Cities and Sorting by Pools)
+To extract a CSV file with the teams and their basketball court addresses from a pool (available on the website https://competitions.ffbb.com/), simply paste the link to the pool's page you want to analyze (for example, for Pool F, Phase 2 D3 Loire-Atlantique: https://competitions.ffbb.com/ligues/pdl/comites/0044/competitions/dm3/classement?phase=200000002864683&poule=200000003006254) into the designated space in the code scraper_ffbb_2.py.
 
-To retrieve the teams and the address of their basketball venues from a group (available on the website https://competitions.ffbb.com/) in a csv file, simply paste the link to the group page to analyze (example for Group B Phase 2 D3 Loire-Atlantique: https://competitions.ffbb.com/ligues/pdl/comites/0044/competitions/dm3/classement?phase=200000002864683&poule=200000003006250) into the space provided in the scraper_ffbb_2.py code.
+Example of output (file adresses_clubs.csv):
+
+Team	Address
+GROUPE ST VINCENT LE PALLET	RUE DES SPORTS, 44330 Le Pallet
+BASKET CLUB BASSE GOULAINE	SQUARE DE THELEY, 44115 Basse-Goulaine
+IE - CTC ERDRE CANAL - BASKET CLUB SUCE/ERDRE	IMPASSE DU LEVANT, 44240 Sucé-sur-Erdre
+MONTBERT GENESTON LE BIGNON B.	Stade Municipal, 44140 Montbert
+ASPTT NANTES	38 RUE APPERT, 44100 Nantes
+USVR VARADES BASKET	450 Rue du Parc, 44370 Varades
+
+Second Part: (Converting Addresses to GPS Coordinates)
+This project currently uses the Nominatim (OpenStreetMap) API via the Python library geopy to convert postal addresses into GPS coordinates (latitude / longitude).
+
+Why this choice?
+Free and no registration required.
+
+Based on OpenStreetMap, so it's open source.
+
+⚠️ Nominatim’s Limitations
+While Nominatim is very useful, it has some limitations:
+
+Some poorly structured or incomplete addresses are not recognized.
+
+Addresses that are too general or local (e.g., "Stade Municipal") are often misinterpreted or not geocoded. This issue was solved by replacing the incomplete address with just the city name. This adjustment sacrifices precision for availability.
+
+🚀 Planned Evolution: Moving to a More Robust API
+To improve accuracy and coverage, a future version may switch to the Google Maps Geocoding API:
+
+✅ More reliable for incomplete or ambiguous addresses
+✅ Returns confidence scores and precise location types
+❗️ Requires an API key and billing activation (free credit of $200/month)
+
+🛠️ Possible Improvements
+Add an automatic fallback: Nominatim → Google Maps API
+
+Log failed addresses for manual correction
+
+Local caching of geocodes to avoid repeated calls
+
+
 
 
 
