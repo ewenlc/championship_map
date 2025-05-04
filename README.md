@@ -8,7 +8,7 @@ The goal is to create an interactive map representing the perimeters encompassin
 
 - [🚀 Fonctionnalités (Features)](#-fonctionnalités)
 - [🙋 Contact](#-contact)
-- [Tester](#-tester)
+- [Tester](#Tester)
 
 ---
 
