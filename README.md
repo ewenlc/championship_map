@@ -28,7 +28,7 @@ Première partie : (Scrapping des pages de championnats ffbb (récuperer club/vi
 
 Pour récuperer dans un fichier csv les équipes ainsi que l'adresse de leur salle de basket d'une poule (présente sur le site https://competitions.ffbb.com/). Il vous suffit de coller le lien de la page de la poule à analyser (exemple pour la poule F phase 2 D3 loire-atlantique : (https://competitions.ffbb.com/ligues/pdl/comites/0044/competitions/dm3/classement?phase=200000002864683&poule=200000003006254) dans l'espace réserver à celui ci dans le code scraper_ffbb_2.py.
 
-exemple de rendu :
+exemple de rendu (fichier adresses_clubs.csv):
 
 | Équipe                                           | Adresse                                  |
 |--------------------------------------------------|-------------------------------------------|
@@ -70,6 +70,11 @@ Pour améliorer la précision et la couverture, une future version pourra utilis
 Ajout d’un fallback automatique : Nominatim → Google Maps API<br>
 Enregistrement des adresses échouées pour correction manuelle<br>
 Cache local des géocodages pour éviter les appels répétés
+
+
+exemple de rendu (sur le fichier positions_avec_coords.csv) :
+
+
 
 
 ---------------------------------------------------------------------------------------------
