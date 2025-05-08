@@ -86,7 +86,7 @@ exemple de rendu (sur le fichier positions_avec_coords.csv) :
 
 ### Troisième partie : (Affichage de la carte)
 
-🗺️ Génération et affichage de la carte
+🗺️ Génération et affichage de la carte (generate_map2.py)
 
 La carte interactive est générée à partir du fichier positions_avec_coords.csv contenant les coordonnées GPS de chaque équipe.<br>
 Pour cela, on utilise la bibliothèque Python **Folium**, qui s’appuie sur **Leaflet.js** pour produire une carte web interactive.
@@ -164,7 +164,7 @@ Example of output (file positions_avec_coords.csv):
 
 ### Part Three: (Map Display)
 
-🗺️ Map Generation and Display
+🗺️ Map Generation and Display (generate_map2.py)
 
 The interactive map is generated from the `positions_avec_coords.csv` file, which contains the GPS coordinates of each team.<br>
 We use the Python library **Folium**, built on top of **Leaflet.js**, to create an interactive web map.
