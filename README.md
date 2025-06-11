@@ -96,7 +96,7 @@ Seuls les points en bordure (calculés avec l’enveloppe convexe, ou convex hul
 
 ![Without convex hull](without_convex_hull.png)
 
-*carte sans enveloppe convexe*
+*Carte sans enveloppe convexe*
 
 🎨 Style et interaction<br>
 Le polygone a un style visuel personnalisable (couleur, transparence, contour...), et les marqueurs sont interactifs : on peut cliquer dessus pour voir le nom de l’équipe.
@@ -175,6 +175,8 @@ Each gymnasium is represented by a custom-styled marker, and all points are conn
 Only the outermost points (calculated using the convex hull) are used to draw the polygon to avoid distortions caused by central points included in the area.
 
 ![Without convex hull](without_convex_hull.png)
+
+*Map without conex hull*
 
 🎨 Style and Interaction <br> 
 The polygon has a fully customizable visual style (color, transparency, borders...), and the markers are interactive: clicking on them shows the team name.
