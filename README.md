@@ -96,6 +96,8 @@ Seuls les points en bordure (calculés avec l’enveloppe convexe, ou convex hul
 
 ![Without convex hull](without_convex_hull.png)
 
+*carte sans enveloppe convexe*
+
 🎨 Style et interaction<br>
 Le polygone a un style visuel personnalisable (couleur, transparence, contour...), et les marqueurs sont interactifs : on peut cliquer dessus pour voir le nom de l’équipe.
 
