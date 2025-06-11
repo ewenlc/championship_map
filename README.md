@@ -176,7 +176,7 @@ Only the outermost points (calculated using the convex hull) are used to draw th
 
 ![Without convex hull](without_convex_hull.png)
 
-*Map without conex hull*
+*Map without convex hull*
 
 🎨 Style and Interaction <br> 
 The polygon has a fully customizable visual style (color, transparency, borders...), and the markers are interactive: clicking on them shows the team name.
